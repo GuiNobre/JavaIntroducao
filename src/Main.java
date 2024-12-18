@@ -1,10 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        Sistema sistema = new Sistema();
+        //Sistema sistema = new Sistema();
+        Teste teste = new Teste();
 
         /* Iniciar dados do cliente*/
-        sistema.inicio();
-
+        teste.inicio();
 
 
      /*   System.out.println("""

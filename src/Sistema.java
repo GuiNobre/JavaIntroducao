@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class Sistema {
     Scanner scanner = new Scanner(System.in);
+    public double saldo = 100;
 
     public void inicio() {
         System.out.println("Qual o seu nome?");
@@ -13,8 +14,24 @@ public class Sistema {
 
         System.out.println("Qual o seu saldo?");
         double saldo = scanner.nextDouble();
+
+        System.out.println("Diga Sim se quer continuar e Não se quer sair");
+         String resposta = scanner.nextLine();
+
+        perguntas(resposta);
+        }
+
+
+public void perguntas(String resposta) {
+    if (resposta.equals("Sim")) {
+        transicao();
     }
-/*
+    if (resposta.equals("Não")) {
+        System.out.println("Fim");
+
+    }
+}
+
     public void transicao() {
 
         int opcao = scanner.nextInt();
@@ -42,5 +59,8 @@ public class Sistema {
             System.out.println("Dígito inválido");
         }
 
-    }*/
+    }
+
+
 }
+
